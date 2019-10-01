@@ -1,7 +1,7 @@
 import cv2
 
-cap = cv2.VideoCapture('rtsp://admin:123456@172.16.25.90')
-# cap = cv2.VideoCapture(0)
+# cap = cv2.VideoCapture('rtsp://admin:123456@172.16.25.90')
+cap = cv2.VideoCapture(0)
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 out = cv2.VideoWriter('video.avi', fourcc, 20.0, (640, 480))
 print(cap)
